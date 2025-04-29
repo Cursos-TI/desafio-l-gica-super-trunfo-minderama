@@ -104,7 +104,7 @@ int main(){
     printf("2. Área\n");
     printf("3. PIB\n");
     printf("4. Número de pontos turisticos\n");
-    printf("5.Densidade populacional\n");
+    printf("5. Densidade populacional\n");
     printf("6. PIB per capita\n");
     printf("Digite sua escolha\n");
     scanf("%d", &atributo1);
@@ -114,17 +114,17 @@ int main(){
     for (int i = 1; i <= 6; i++) {
         if (i != atributo1) {
             switch (i) {
-                case 1: printf("1. População\n");
-                case 2: printf("2. Área\n");
-                case 3: printf("3. PIB\n");
-                case 4: printf("4. Número de pontos turisticos\n");
-                case 5: printf("5.Densidade populacional\n");
-                case 6: printf("6. PIB per capita\n");
+                case 1: printf("1. População\n"); break;
+                case 2: printf("2. Área\n"); break;
+                case 3: printf("3. PIB\n"); break;
+                case 4: printf("4. Número de pontos turisticos\n"); break;
+                case 5: printf("5. Densidade populacional\n"); break;
+                case 6: printf("6. PIB per capita\n"); break;
             }
         }
     }
    printf("Digite sua escolha ");
-   scanf("%d", atributo2);
+   scanf("%d", &atributo2);
 
    if (atributo2 == atributo1 ) {
     printf("Opção inválida!\n");
@@ -159,9 +159,9 @@ int main(){
    (atributo2 == 5 ? (1 / valorCarta1Atributo2) : valorCarta1Atributo2);
 
    soma2 = (atributo1 == 5 ? (1 / valorCarta2Atributo1) : valorCarta2Atributo1) +
-   (atributo2 == 5 ? (1 / valorCarta2Atributo2) : valorCarta1Atributo2);
+   (atributo2 == 5 ? (1 / valorCarta2Atributo2) : valorCarta2Atributo2);
 
-   printf("Soma dos atrubutos\n");
+   printf("Soma dos atributos\n");
    printf("%s: %.2f\n", nomecidade1, soma1);
    printf("%s: %.2f\n", nomecidade2, soma2);
 
